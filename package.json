@@ -1,0 +1,33 @@
+{
+  "name": "@example/super-function",
+  "version": "1.0.0",
+  "description": "Util",
+  "scripts": {
+    "test": "echo Tested!",
+    "clean": "rm -rf ./dist",
+    "build": "tsup",
+    "pack": "npm run clean && npm run build && npm run test && npm pack && cd example && npm install ../example-super-function-1.0.0.tgz",
+    "packDry": "npm pack --dry-run"
+  },
+  "keywords": [
+    "Util"
+  ],
+  "author": "Radosław Landowski <radoslaw.landowski@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elense-software/file-tester.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}

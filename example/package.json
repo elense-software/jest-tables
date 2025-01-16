@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "run": "node main.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@example/super-function": "file:../example-super-function-1.0.0.tgz"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.3"
+  }
+}
